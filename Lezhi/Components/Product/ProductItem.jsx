@@ -1,7 +1,9 @@
-import React, {Component} from 'React'
+import React, {Component} from 'react';
 
 export default class ProductItem extends Component {
     render() {
-        return (<label>111</label>)
+        return (
+            <label>111</label>
+        )
     }
 }
