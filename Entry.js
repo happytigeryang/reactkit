@@ -16,3 +16,6 @@ if (module.hot) {
         .accept(App, ReactDOM.render(rootApp, rootEl));
         console.log(1);
 }
+
+//#https://github.com/gaearon/react-hot-loader
+//#https://github.com/gaearon/react-hot-boilerplate/tree/next
