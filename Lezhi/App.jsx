@@ -3,6 +3,6 @@ import ProductItem from './Components/Product/ProductItem'
 
 export default class App extends Component {
     render() {
-        return (<ProductItem/>)
+        return (<div>app:1<ProductItem/></div>)
     }
 }
