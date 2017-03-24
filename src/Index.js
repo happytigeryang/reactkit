@@ -2,7 +2,9 @@ import {AppContainer} from 'react-hot-loader';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './Lezhi/App';
+// require('file?name=[name].[ext]!./index.html');
+require("html-loader!./index.html");
+import App from './components/App';
 
 const rootApp = <AppContainer><App/></AppContainer>;
 const rootEl = document.getElementById('app');
