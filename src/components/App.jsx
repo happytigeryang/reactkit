@@ -11,7 +11,9 @@ export default class App extends Component {
     }
     render() {
         return (
-            <div>app:111<ProductItem/>
+            <div>
+                <h1>app lezhi</h1>
+                <ProductItem/>
                 <label>{this.state.IsPromotion
                         ? " $$Promotion"
                         : ""}</label>
