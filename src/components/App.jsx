@@ -2,6 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import ProductItem from './product/ProductItem'
 import Comp from './product/ShoppingCart'
 
+import styles from '../app.less'
+
 export default class App extends Component {
     constructor(props) {
         super(props);
@@ -14,7 +16,9 @@ export default class App extends Component {
             <div>
                 <h1>app lezhi style test sucessed.</h1>
                 <ProductItem/>
-                <label>{this.state.IsPromotion
+                
+                
+                <label className="ptitle">{this.state.IsPromotion
                         ? " $$Promotion"
                         : ""}</label>
                 <Comp name="ty"/>

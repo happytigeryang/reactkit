@@ -45,7 +45,21 @@ module.exports = {
                 loaders: ["style-loader", "css-loader", "less-loader"]
             }, {
                 test: /\.css$/,
-                loaders: ["style-loader", "css-loader"]
+                use: [
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            modules: true
+                        }
+                    }, {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            modules: true
+                        }
+                    }
+                ]
+                // loaders: [     "style-loader", "css-loader" ] 
                 // loader: "style-loader!css-loader?modules"
             }, {
                 test: /\.js|jsx/,

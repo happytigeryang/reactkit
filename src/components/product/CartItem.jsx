@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import pstyle from './product.css';
 
 export default class CartItem extends Component {
     static cartItemPropTypes = {
@@ -6,7 +7,8 @@ export default class CartItem extends Component {
     }
     render() {
         return (
-            <li>{this.props.item}</li>
+            
+            <li><span className={pstyle.pprice}>11newegg11</span>{this.props.item}</li>
         );
     }
 }
