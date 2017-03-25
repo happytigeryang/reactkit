@@ -9,12 +9,12 @@ export default class CartItemList extends Component {
         return (
             <ul
                 style={{
-                position: 'absolute',
+                position: 'fixed',
                 top: '0px',
                 right: '0px',
-                height: '100px',
-                width: '100px',
-                backgroundColor: 'red'
+                height: 'auto',
+                width: '200px',
+                backgroundColor: '#ff0'
             }}>
                 {this
                     .props
