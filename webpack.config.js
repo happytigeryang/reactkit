@@ -41,8 +41,11 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.less$/,
+                loaders: ["style-loader", "css-loader", "less-loader"]
+            }, {
                 test: /\.css$/,
-                loaders:["style-loader","css-loader"]
+                loaders: ["style-loader", "css-loader"]
                 // loader: "style-loader!css-loader?modules"
             }, {
                 test: /\.js|jsx/,
@@ -53,8 +56,8 @@ module.exports = {
 
     },
     plugins: [
-        // new webpack.HotModuleReplacementPlugin(),
-        // enable HMR globally(以上会与css-loader/style-loader冲突，故注释)
+        // new webpack.HotModuleReplacementPlugin(), enable HMR
+        // globally(以上会与css-loader/style-loader冲突，故注释)
 
         new webpack.NamedModulesPlugin(),
         // prints more readable module names in the browser console on HMR updates new

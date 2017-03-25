@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 
 require("./app.css");
+require("./app.less");
 
 // require('file?name=[name].[ext]!./index.html');
 // require("html-loader!./index.html");
