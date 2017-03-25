@@ -41,6 +41,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                loaders:["style-loader","css-loader"]
+                // loader: "style-loader!css-loader?modules"
+            }, {
                 test: /\.js|jsx/,
                 loaders: ['babel-loader'],
                 exclude: /node-modules/
@@ -49,13 +53,12 @@ module.exports = {
 
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        // enable HMR globally
+        // new webpack.HotModuleReplacementPlugin(),
+        // enable HMR globally(以上会与css-loader/style-loader冲突，故注释)
 
         new webpack.NamedModulesPlugin(),
-        // prints more readable module names in the browser console on HMR updates
-
-        // new HtmlWebpackPlugin(),
-        // //The plugin will generate an HTML5 file for you that includes all your webpack bundles in the body using script tags. 
+        // prints more readable module names in the browser console on HMR updates new
+        // HtmlWebpackPlugin(), //The plugin will generate an HTML5 file for you that
+        // includes all your webpack bundles in the body using script tags.
     ]
 };

@@ -12,7 +12,7 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <h1>app lezhi</h1>
+                <h1>app lezhi style test sucessed.</h1>
                 <ProductItem/>
                 <label>{this.state.IsPromotion
                         ? " $$Promotion"
