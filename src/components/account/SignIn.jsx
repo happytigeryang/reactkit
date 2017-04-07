@@ -7,15 +7,17 @@ export default class SignIn extends Component {
             AccountName: props.name,
             RetryNumber: 0
         }
+        this.loginOnClick=this.loginOnClick.bind(this);
     }
     loginOnClick() {
-        // this.setState((prevState, props) => ({
-        //     RetryNumber: prevState.RetryNumber + 1
-        // }))
+        debugger;
+        this.setState((prevState, props) => ({
+            RetryNumber: prevState.RetryNumber + 1
+        }))
     };
     render() {
         return <div>this is SignIn panel.{this.state.AccountName}
-            <button onClick={this.loginOnClick()}>sign in</button>|| Retry Number:{this.state.RetryNumber}
+            <button onClick={this.loginOnClick}>sign in</button>|| Retry Number:{this.state.RetryNumber}
 
         </div>
     }
