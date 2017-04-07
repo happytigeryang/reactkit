@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PagePic from './PagePic'
 import PageLink from './PageLink'
+import RefC from './RefC'
 
 export default class Avatar extends Component {
     constructor(props)
@@ -19,6 +20,7 @@ export default class Avatar extends Component {
     render() {
         return (
             <div>
+                <div><RefC /></div>
                 <div>
                     <textarea name="description" defaultValue="This is."/></div>
                 <div>
