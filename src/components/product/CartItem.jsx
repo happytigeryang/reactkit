@@ -7,8 +7,11 @@ export default class CartItem extends Component {
     }
     render() {
         return (
-            
-            <li><span className={pstyle.pprice}>11newegg11</span>{this.props.item}</li>
+
+            <li>
+                <span >product:</span>
+                <span className={pstyle.pprice}>{this.props.item}</span>
+            </li>
         );
     }
 }

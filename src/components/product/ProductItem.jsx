@@ -10,6 +10,7 @@ export default class ProductItem extends Component {
             items: []
         };
         console.log("this is constructor.");
+        this._addToCart=this._addToCart.bind(this);
     }
     _addToCart(item) {
         console.log(`item ${item} has beed added to cart list...`);
@@ -29,9 +30,7 @@ export default class ProductItem extends Component {
                 height: '100%'
             }}>
                 <ItemInfo
-                    addToCart={this
-                    ._addToCart
-                    .bind(this)}/>
+                    addToCart={this._addToCart}/>
                 <CartItemList items={this.state.items}/>
             </div>
         )
