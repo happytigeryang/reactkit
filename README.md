@@ -1,12 +1,12 @@
-# 项目名称
+## 项目名称
 react_startkit
 
-# Installation
+## Installation
   ```
   npm install
   ```  
 
-# 启动开dev-server
+## 启动开dev-server
   ```
   gulp
   ```  
