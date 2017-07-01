@@ -70,8 +70,7 @@ module.exports = {
 
     },
     plugins: [
-        // new webpack.HotModuleReplacementPlugin(), enable HMR
-        // globally(以上会与css-loader/style-loader冲突，故注释)
+        new webpack.HotModuleReplacementPlugin(), //enable HMR
 
         new webpack.NamedModulesPlugin(),
         // prints more readable module names in the browser console on HMR updates new
