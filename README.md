@@ -1,4 +1,4 @@
-## 项目名称
+﻿## 项目名称
 react_startkit
 
 ## Installation
@@ -10,3 +10,4 @@ react_startkit
   ```
   gulp
   ```  
+## Author
